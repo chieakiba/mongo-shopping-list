@@ -3,8 +3,15 @@ node_js: node
 services:
 - mongodb
 addons:
-    apt:
-        sources:
-        - mongodb-3.2-precise
-        packages:
-        - mongodb-org-server
+  apt:
+    sources:
+    - mongodb-3.2-precise
+    packages:
+    - mongodb-org-server
+deploy:
+  provider: heroku
+  api_key:
+    secure: HqNW0cCx21jlmEQ31mdx+0TmqUapruD3PoWpTdCWO95iqR3NrOqvayClhrW35sPZgZXbuHhiRWUTj4Ierq1bEdkTQK84oxmc6vNoXQl/mpvszPrr3LU4qtUnoWh9gwzGksDhW+OCjyZgOVDIidgKtqWBeVlPiuJMIafSX5ehhRT50+aMzZferjkjfvCvUBPL7uDUf1DdWRc9c0WY/nhVleKXXzrR6UbUm7YldawGxiWEdnYMqcU0y2QEfzcuYhPaKHGuAeRsRm6DS3+lueDMf6R+VGE4HMLt4x5wz7DtkvqypT6X7pe+qerY9hPoxKa6lrYuKLtS9n+m4eFiY+vgtGiIWia5x7FrM/7/uPiHMQ9qbtYweG2N3SNGFQyPaHlT3rkYhO9h1/nQIYbh9sQRITJmkF8OyDhvYTR8LoReFxk6bm56kB9Tuuztr7Zfy4B6FDfhGi4pMT175BiPMDJW3pEhYtJkRUWdOi3Mt1YH905MLxk+dc1idGLGpOMa9pIbgUuDl0x/M5BYCigHleXk1ec7CQ4q1dQIFt0Da/BhxtO5IMEMfVG8zhX2EYGFsLpHmGnn1xW/4Q5E786KPLwrv4zcsMMnbbaI1hjImU5hrOXsHAl/PcY4Wn6ymerEtLQCqkvMbOQrd69hr4xwWIOBZ2gVCaAycoVpPbk353nmZ3k=
+  app: hidden-badlands-88287
+  on:
+    repo: chieakiba/mongo-shopping-list
