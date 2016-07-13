@@ -40,7 +40,6 @@ describe('Shopping List', function () {
                 res.body[0].should.have.property('_id');
                 res.body[0].should.have.property('name');
                 res.body[0].name.should.be.a('string');
-                console.log("Broad beans", res.body[0]);
                 res.body[0].name.should.be.eq('Broad beans');
                 res.body[1].name.should.be.eq('Tomatoes');
                 res.body[2].name.should.be.eq('Peppers');
