@@ -1,23 +1,23 @@
 {
-    "name": "mongo-shopping-list",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js",
-    "scripts": {
-        "start": "node server.js",
-        "test": "mocha"
-    },
-    "author": "Chie Akiba",
-    "license": "ISC",
-    "dependencies": {
-        "body-parser": "^1.15.2",
-        "express": "^4.14.0",
-        "mongoose": "^4.5.3",
-        "nodemon": "^1.9.2"
-    },
-    "devDependencies": {
-        "chai": "^3.5.0",
-        "chai-http": "^3.0.0",
-        "mocha": "^2.5.3"
-    }
+  "name": "mongo-shopping-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha"
+  },
+  "author": "Chie Akiba",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.4",
+    "nodemon": "^1.9.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^2.5.3"
+  }
 }
