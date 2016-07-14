@@ -10,6 +10,7 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 var runServer = function (callback) {
+    console.log(config.DATABASE_URL, "URL ::::::::")
     mongoose.connect(config.DATABASE_URL, function (err) {
         if (err) {
             return callback(err);
