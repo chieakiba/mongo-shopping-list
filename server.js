@@ -25,7 +25,11 @@ var runServer = function (callback) {
 };
 
 if (require.main === module) {
-    runServer();
+    runServer(function (err) {
+        if (err) {
+            console.error(err);
+        }
+    });
 };
 
 var Item = require('./models/item');
